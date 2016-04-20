@@ -1,0 +1,12 @@
+{
+  "name": "node-drawing-game-caa",
+  "description": "Sample node app that draws lines on canvases",
+  "main": "app.js",
+  "version": "0.0.0",
+  "dependencies": {
+    "node-static": "^0.7.7",
+    "os": "^0.1.1",
+    "pusher": "^1.2.1",
+    "socket.io": "^0.9.10"
+  }
+}
