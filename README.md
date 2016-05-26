@@ -3,8 +3,9 @@
 Communities In Schools JavaScript and Node.js Training
 
 Herein you'll find:
-* `node-drawing-game`
-* follow-up document with [JavaScript_and_Nodejs_Basics](https://github.com/caagency/caa-nodeTraining/blob/master/JavaScript_and_Nodejs_Basics.md) to practice on your own
+* Projects to try
+* Instructions for [Tessel2NodeBots](Tessel2NodeBots.md)
+* Follow-up document with [JavaScript_and_Nodejs_Basics](JavaScript_and_Nodejs_Basics.md) to practice on your own
 
 
 ## node-drawing-game

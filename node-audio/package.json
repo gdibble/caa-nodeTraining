@@ -1,0 +1,22 @@
+{
+  "name": "node-audio-player",
+  "description": "Read some text and/or play an mp3 file",
+  "main": "app.js",
+  "version": "0.1.0",
+  "dependencies": {
+    "node-static": "^0.7.7",
+    "os": "^0.1.1",
+    "socket.io": "^1.4.6",
+    "tessel": "^0.3.24",
+    "tessel-av": "^0.6.0"
+  },
+  "keywords": [
+    "Tessel, ambient, light"
+  ],
+  "author" : "Gabriel Dibble <gdibble@gmail.com>",
+  "contributors" : [
+    "@gdibble",
+    "@jlit",
+    "@surfswells21"
+  ]
+}

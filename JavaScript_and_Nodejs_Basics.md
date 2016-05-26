@@ -274,8 +274,8 @@ The next step is to just experiment; be a Developer.  Search the web for JavaScr
 
 # Resources
 
-* https://goo.gl/i8OFUj - a link to the code and Node.js/SublimeText2 installers for Windows
-* http://github.com/gdibble/caa-nodeTraining - you can also download or clone from this repo
+* http://github.com/gdibble/caa-nodeTraining | you can also download this repo or [clone](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository) with [git](https://git-scm.com) using:
+  * `git clone https://github.com/gdibble/caa-nodeTraining.git`
 * http://www.nodejs.org
 * http://www.sublimetext.com/
 * http://www.w3schools.com/js/
@@ -285,3 +285,9 @@ The next step is to just experiment; be a Developer.  Search the web for JavaScr
 * http://developer.mozilla.org/en-US/docs/Web/Tutorials
 * http://developer.mozilla.org/en-US/docs/Games
 * http://creativejs.com/2011/08/31-days-of-canvas-tutorials/
+
+
+--
+
+
+_Made with ♥ by CAA_

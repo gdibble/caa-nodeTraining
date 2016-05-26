@@ -1,0 +1,20 @@
+{
+  "name": "node-climate-tracker",
+  "description": "Graph relative humidity and temperature on webpage",
+  "main": "server.js",
+  "version": "0.1.0",
+  "dependencies": {
+    "climate-si7020": "^0.1.1",
+    "node-static": "^0.7.7",
+    "os": "^0.1.1",
+    "socket.io": "^1.4.6",
+    "tessel": "^0.3.24"
+  },
+  "keywords": [
+    "Tessel, alarm"
+  ],
+  "author" : "Gabriel Dibble <gdibble@gmail.com>",
+  "contributors" : [
+    "@gdibble"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "node-activate-light",
+  "description": "Make something happen when the lights come on",
+  "main": "app.js",
+  "version": "0.0.0",
+  "dependencies": {
+    "ambient-attx4": "^0.2.8",
+    "node-static": "^0.7.7",
+    "os": "^0.1.1",
+    "relay-mono": "^0.1.3",
+    "tessel": "^0.3.24",
+    "tessel-toggle-power": "^0.1.0"
+  },
+  "keywords": [
+    "Tessel, ambient, light"
+  ],
+  "author" : "Gabriel Dibble <gdibble@gmail.com>",
+  "contributors" : [
+    "@gdibble"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "node-pet-sleeptracker",
+  "description": "Activity tracker which sends a text message + posts to webpage",
+  "main": "app.js",
+  "version": "0.1.0",
+  "dependencies": {
+    "accel-mma84": "^0.2.4",
+    "node-static": "^0.7.7",
+    "os": "^0.1.1",
+    "socket.io": "^1.4.6",
+    "tessel": "^0.3.24",
+    "twilio": "^2.9.1"
+  },
+  "keywords": [
+    "Tessel, accelerometer"
+  ],
+  "author" : "Gabriel Dibble <gdibble@gmail.com>",
+  "contributors" : [
+    "@gdibble"
+  ]
+}

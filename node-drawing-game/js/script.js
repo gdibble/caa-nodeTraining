@@ -1,3 +1,5 @@
+/*global $*/
+
 // jQuery shortcut to wait until the page is ready
 $(function () {
   // Declare variables and function first!
@@ -20,7 +22,9 @@ $(function () {
   var lastEmit = $.now();
   var housekeepingDelay = 10 * 1000; //1 sec = 1000 millisecond, thus 10 sec
 
-  // Helpers:
+
+  // HELPERS:
+
   // Draw a line
   function drawLine(fromX, fromY, toX, toY, color) {
     var context = $canvas[0].getContext('2d');
@@ -33,7 +37,8 @@ $(function () {
     context.stroke();
   }
 
-  // Handle messages coming over the internet from our Node.js server (via pusher)
+
+  // Handle messages coming over the internet from our Node.js server (via web socket)
   function handleServerMovement(data) {
     // console.log('handleServerMovement: ', data)
     if (!(data.id in clients)) {
@@ -52,6 +57,7 @@ $(function () {
     clients[data.id].updated = $.now();
   }
 
+
   // Listen for when the user presses down the mouse button
   function startDrawing(mousedownEvent) {
     mousedownEvent.preventDefault();
@@ -62,15 +68,19 @@ $(function () {
     $('#instructions').fadeOut();
   }
 
+
   // Listen for when the mouse button is lifted or the mouse leaves the browser
   function stopDrawing() {
     drawing = false;
   }
 
+
+  // Clear Canvas Element
   function clearCanvas() {
     var context = $canvas[0].getContext('2d');
     context.clearRect(0, 0, $canvas[0].width, $canvas[0].height);
   }
+
 
   // This is called when the mouse moves
   function handleLocalMovement(mousemoveEvent) {
@@ -95,6 +105,7 @@ $(function () {
     }
   }
 
+
   // Setup all our event listeners
   function listenForEvents() {
     // This is where we start monitoring the local mouse buttons and position
@@ -102,6 +113,7 @@ $(function () {
     $doc.bind('mouseup mouseleave', stopDrawing);
     $doc.on('mousemove', handleLocalMovement);
   }
+
 
   // Call the node server to get the computer's IP Address
   function getIPAddressFromNodeServer(data) {
@@ -122,6 +134,7 @@ $(function () {
     });
   }
 
+
   // Removes inactive clients
   function housekeeping() {
     for (var identity in clients) {
@@ -137,12 +150,11 @@ $(function () {
     setTimeout(housekeeping, housekeepingDelay); //recursive: runs itself
   }
 
-  // Here is where the code actually starts execution...
+
+  // START:
 
   listenForEvents();
-
   getIPAddressFromNodeServer();
+  housekeeping();  // Remove inactive clients after 10 seconds of inactivity
 
-  // Remove inactive clients after 10 seconds of inactivity
-  housekeeping();
 });
