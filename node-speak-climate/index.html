@@ -1,0 +1,32 @@
+<!DOCTYPE html><!-- HTML5 -->
+<html>
+  <head>
+    <title>Speak & Track Climate @ CAA IT FSM</title>
+    <link href="css/nv.d3.css" rel="stylesheet" type="text/css"> 
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+  </head>
+
+  <body>
+    <svg id="graph"></svg> 
+    
+    <hgroup>
+      <h1>Climate Tracker</h1>
+      <h2 id="active">This server: <a id="localIPAddress" /></h2>
+    </hgroup>
+
+    <!-- JavaScript includes -->
+    <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <!-- Socket.io -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- D3js -->
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> 
+    <!-- NV -->
+    <script src="js/nvd3/nv.d3.js"></script>
+    <script src="js/nvd3/legend.js"></script>
+    <script src="js/nvd3/line.js"></script>
+    <script src="js/nvd3/utils.js"></script>
+    <!-- Ours -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

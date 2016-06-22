@@ -1,9 +1,10 @@
 {
-  "name": "node-audio-player",
-  "description": "Read some text and/or play an mp3 file",
-  "main": "app.js",
+  "name": "node-speak-climate",
+  "description": "Speak relative humidity and temperature + webpage graph",
+  "main": "server.js",
   "version": "0.1.0",
   "dependencies": {
+    "climate-si7020": "^0.1.1",
     "node-static": "^0.7.7",
     "os": "^0.1.1",
     "socket.io": "^1.4.6",
@@ -11,12 +12,10 @@
     "tessel-av": "^0.7.0"
   },
   "keywords": [
-    "Tessel, audio, mp3, speak, text to speech"
+    "Tessel, climate, speak, text to speech"
   ],
   "author": "Gabriel Dibble <gdibble@gmail.com>",
   "contributors": [
-    "@gdibble",
-    "@jlit",
-    "@surfswells21"
+    "@gdibble"
   ]
 }
